@@ -2,9 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NgProgressModule } from '@ngx-progressbar/core';
-import { RouterModule, Routes } from '@angular/router'
-import { NgProgressHttpModule } from '@ngx-progressbar/http';
+import { RouterModule, Routes } from '@angular/router';
 import { UserService } from './user-http/user.service';
 import { ReposService } from './repos-http/repos.service';
 
@@ -30,8 +28,6 @@ import { ForksPipe } from './forks.pipe';
     FormsModule,
     RoutingModule,
     HttpClientModule,
-    NgProgressModule,
-    NgProgressHttpModule,
     ReactiveFormsModule
   ],
   providers: [UserService, ReposService],
