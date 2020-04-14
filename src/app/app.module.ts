@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { UserService } from './user-http/user.service';
 import { ReposService } from './repos-http/repos.service';
+import { NgProgressModule } from 'ngx-progressbar';
 
-import { RoutingModule} from './routing/routing.module'
+import { RoutingModule} from './routing/routing.module';
 import { AppComponent } from './app.component';
 import { DisplayComponent } from './display/display.component';
 import { RepositoryComponent } from './repository/repository.component';
@@ -26,9 +28,11 @@ import { ForksPipe } from './forks.pipe';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     RoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgProgressModule 
   ],
   providers: [UserService, ReposService],
   bootstrap: [AppComponent]

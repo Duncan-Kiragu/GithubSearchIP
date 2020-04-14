@@ -18,7 +18,7 @@ export class DisplayComponent implements OnInit {
   userName: string;
 
   constructor( private userRequestService: UserService){
-    this.userRequestService.userName = "fuaad001";
+    this.userRequestService.userName = "Duncan-Kiragu";
     this.userRequestService.userRequest();
     this.user = this.userRequestService.user;
   }

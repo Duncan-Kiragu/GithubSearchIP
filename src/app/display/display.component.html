@@ -13,7 +13,9 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <img [src]="user.avatar">
+        <div class="img">
+          <img [src]="user.avatar">
+        </div>
       </div>
       <div class="col-md-8">
         <div class="output card">
@@ -23,7 +25,7 @@
           <h6><strong>Repositories: </strong> <em>{{user.repositories}}</em></h6>
           <h6><strong>Followers: </strong> <em>{{user.followers}}</em></h6>
           <h6><strong>Following: </strong> <em>{{user.following}}</em></h6>
-          <button class="btn btn-warning"><a [href]="user.link">Visit GitHub Page</a></button>
+          <button class="btn btn-info"><a [href]="user.link">Visit GitHub Page</a></button>
         </div>
       </div>
     </div>
