@@ -12,7 +12,7 @@ export class HighlightDirective {
   @Input() user: User;
 
   constructor(private elem: ElementRef) {
-    this.elem.nativeElement.style.backgroundColor = '#17a2b8';
+    this.elem.nativeElement.style.backgroundColor = 'coral';
   }
 
 }

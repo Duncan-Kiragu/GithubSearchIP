@@ -4,25 +4,25 @@ nav>ul>li{
   }
   
   .container-fluid {
-    background-image: url("src/assets/download.jpeg");
+    background-image: url("src/assets/image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   nav>ul>li>a{
-    font-family: 'Merienda', cursive;
+    font-family: 'ZCOOL XiaoWei';
     font-weight: bold;
     text-decoration: none;
+    font-size: 30px;
   }
   
   nav>ul>li>a:hover{
-    color: black;
+    color: red;
     text-decoration: underline;
   }
 
   img{
       width: 100%;
-      height: 100%;
   }
 
   .topbar{
